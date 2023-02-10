@@ -1,0 +1,248 @@
+/* --common css start */
+*{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style-type: none;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.sectionInfo {
+    text-align: center;
+    margin: auto;
+    color: #7e8287;
+}
+.sectionInfo h2{
+    font-size: 46px;
+    font-weight: 800;
+    color: #02918c;
+    text-transform: uppercase;
+}
+.sectionInfo p{
+    font-size: 16px;
+    line-height: 41px;
+    color: #7e8287;
+    margin: auto;
+}
+/*--common css end*/
+
+/* -- nav section start */
+
+#navigation{
+    background-color: #02918b;
+}
+
+#navigation div.row{
+    justify-content: space-between;
+    align-items: center;
+}
+#navigation ul li a{
+    display: inline-block;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    padding: 16px 25px;
+    margin: 10px 0;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#navigation ul li:hover a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    border-radius: 15px;
+}
+/* -- nav section end */
+
+/* -- banner section start */
+
+#banner{
+    background-image: url(../images/banner/banner-bg.jpg);
+    height: 728px;
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+#banner::after{
+    content: '';
+    position: absolute;
+    inset: 0;
+    background-color: black;
+    opacity: 0.7;
+    z-index: -1;
+}
+#banner .container{
+    height: 100%;
+}
+#banner .row{
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+}
+#banner h3{
+    font-size: 30px;
+    font-weight: 400;
+}
+#banner h1{
+    font-size: 68px;
+    font-weight: 800;
+    letter-spacing: 30px;
+    text-transform: uppercase;
+}
+#banner p{
+    font-size: 18px;
+}
+#banner img{
+    display: block;
+    margin: 52px auto;
+}
+#banner a{
+    background-color: #cfc91d;
+    color: #0b1016;
+    font-size: 14px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    display: inline-block;
+    padding: 19px 42px;
+    text-transform: uppercase;
+    transition: .5s;
+}
+#banner a:hover{
+    background-color: #02918b;
+    color: #ffffff;
+}
+/* -- banner section end */
+
+/* -- about me section start */
+
+
+#aboutMe{
+    padding: 100px 0;
+}
+#aboutMe .sectionInfo p{
+    width: 880px;
+}
+#aboutMe .sectionInfo p b{
+    font-size: 23px;
+    font-weight: 800;
+}
+#aboutMe .row{
+    justify-content:space-evenly;
+    align-items: center;
+}
+#aboutMe .aboutItem{
+    width: 25%;
+    text-align: center;
+    border-right: 1px solid #979090;
+    padding: 50px 60px;
+    margin-top:50px;
+}
+#aboutMe .aboutItem:last-child{
+    border-right: none;
+}
+/* -- about me section end */
+
+/* -- sevices section start */
+#services{
+    background-image: url(../images/sevices/sevices-bg.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #7e8287;
+    padding: 78px 0 30px;
+}
+#services .innercontainer{
+    width: 50%;
+}
+#services .sectionInfo{
+    text-align: left;
+}
+#services .row{
+    justify-content: space-between;
+}
+#services .serviceItem{
+    width: 50%;
+    margin-bottom: 59px;
+}
+#services .serviceItem h4{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+    margin: 10px 0;
+
+}
+#services .sectionInfo p{
+    margin-bottom: 59px;
+}
+#services .serviceItem p{
+    font-size: 11px;
+    line-height: 21px;
+}
+/* -- sevices section end */
+
+/* -- my work section start */
+#myWork{
+    padding-top: 100px;
+}
+#myWork .row{
+    margin-top: 78px;
+}
+#myWork .myWorkItem{
+    width: 25%;
+    position: relative;
+}
+#myWork .myWorkItem img{
+    display: block;
+    width: 100%;
+}
+#myWork .myWorkItem .overlay{
+    color: #ffffff;
+    text-align: center;
+    padding: 58px 0 50px;
+    background-color: rgba(2, 145, 139, 0.85);
+    position: absolute;
+    inset: 20px 27px;
+    z-index: 1;
+    transform: rotate(360deg) scale(0);
+    border-radius: 50%;
+    transition: .7s;
+}
+#myWork .myWorkItem:hover .overlay{
+    visibility: visible;
+    transform: rotate(0) scale(1);
+    border-radius: 0%;
+}
+#myWork .myWorkItem .overlay h4{
+    font-size: 16px;
+    font-weight: 800;
+    line-height: 23px;
+    margin-bottom: 15px;
+}
+#myWork .myWorkItem .overlay p{
+    font-size: 13px;
+    line-height: 21px;
+}
+/* -- my work section end */
+/* -- contact me section start */
+
+#contactMe{
+    padding: 89px 0;
+}
+/* -- contact me section end */
